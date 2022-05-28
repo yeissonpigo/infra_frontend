@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Autor</title>
+</head>
+<body>
+    <h2>la cedula que has buscado es: {{response}}</h2>
+    <p>Nombre: {{response.body.0}}</p>
+    <p>Cedula: {{response.body.1}}</p>
+    <p>Pais: {{response.body.2}}</p>
+    <p>Ciudad: {{response.body.3}}</p>
+    <button><a href="http://localhost:5000/">Volver</a></button>
+</body>
+</html>

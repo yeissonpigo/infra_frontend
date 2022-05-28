@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autores</title>
+</head>
+<body>
+    <h1>¡Bienvenido al gestionador de autores!</h1>
+    <h2>Para ver todos los autores:</h2>
+    <button>    
+        <a href="/all_autores">Get All Autores</a>
+    </button>
+    <h2>Para buscar un autor con la cedula</h2>
+    <form action="/get_autor" method="GET">
+        <input type="text" name="cedula" id="cedula" placeholder="Ingrese cedula">
+        <button type="submit">Buscar</button>
+    </form>
+    <h2>Para crear un autor:</h2>
+    <form action="/create_autor" method="POST">
+        <input type="text" name="nombre" id="" placeholder="Ingrese nombre">
+        <input type="text" name="cedula" id="" placeholder="Ingrese cedula">
+        <input type="text" name="pais" id="" placeholder="Ingrese pais">
+        <input type="text" name="ciudad" id="" placeholder="Ingrese ciudad">
+        <button type="submit">Crear</button>
+    </form>
+    <h2>Para actualizar un autor existente (primary key es cedula):</h2>
+    <form action="/update_autor" method="POST">
+        <input type="text" name="nombre" id="" placeholder="Ingrese nombre">
+        <input type="text" name="cedula" id="" placeholder="Ingrese cedula">
+        <input type="text" name="pais" id="" placeholder="Ingrese pais">
+        <input type="text" name="ciudad" id="" placeholder="Ingrese ciudad">
+        <button type="submit">Actualizar</button>
+    </form>
+    <h2>Para eliminar un autor:</h2>
+    <form action="/delete_autor" method="POST">
+        <input type="text" name="cedula" id="" placeholder="Ingrese cedula">
+        <button type="submit">Eliminar</button>
+    </form>
+
+</body>
+</html>

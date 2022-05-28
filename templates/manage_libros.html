@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros</title>
+</head>
+<body>
+    <h1>¡Bienvenido al gestionador de libros!</h1>
+    <h2>Para ver todos los libros:</h2>
+    <button>    
+        <a href="/all_libros">Get All Books</a>
+    </button>
+    <h2>Para buscar un libro con el ISBN</h2>
+    <form action="/get_libro" method="GET">
+        <input type="text" name="isbn" id="isbn" placeholder="Ingrese ISBN">
+        <button type="submit">Buscar</button>
+    </form>
+    <h2>Para crear un libro:</h2>
+    <form action="/create_libro" method="POST">
+        <input type="text" name="nombre" id="" placeholder="Ingrese nombre">
+        <input type="text" name="isbn" id="" placeholder="Ingrese ISBN">
+        <input type="text" name="año" id="" placeholder="Ingrese año">
+        <input type="text" name="autor" id="" placeholder="Ingrese autor">
+        <button type="submit">Crear</button>
+    </form>
+    <h2>Para actualizar un libro existente (primary key es el isbn):</h2>
+    <form action="/update_libro" method="POST">
+        <input type="text" name="nombre" id="" placeholder="Ingrese nombre">
+        <input type="text" name="isbn" id="" placeholder="Ingrese ISBN">
+        <input type="text" name="año" id="" placeholder="Ingrese año">
+        <input type="text" name="autor" id="" placeholder="Ingrese autor">
+        <button type="submit">Actualizar</button>
+    </form>
+    <h2>Para eliminar un libro:</h2>
+    <form action="/delete_libro" method="POST">
+        <input type="text" name="isbn" id="" placeholder="Ingrese ISBN">
+        <button type="submit">Eliminar</button>
+    </form>
+
+</body>
+</html>
